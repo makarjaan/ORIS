@@ -25,17 +25,11 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter writer = resp.getWriter();
-        String idParam = req.getParameter("id");
-        if (idParam == null) {
-            writer.print("GET ERROR");
-            return;
-        }
         writer.print("GET");
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("application/json");
         String requestBody = req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
         PrintWriter writer= resp.getWriter();
         writer.print("PUT" + requestBody);
@@ -44,11 +38,6 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter writer = resp.getWriter();
-        String idParam = req.getParameter("id");
-        if (idParam == null) {
-            writer.print("DELETE ERROR");
-            return;
-        }
         writer.print("DELETE");
     }
 }

@@ -21,13 +21,6 @@ public class Main {
         System.out.println(client.post("http://localhost:8080/ORIS_war/", headers, postData));
 
 
-        Map<String, String> postData2 = new HashMap<>();
-        postData2.put("id", "2");
-        postData2.put("title", "way");
-        postData2.put("body", "kruto");
-        System.out.println(client.post("http://localhost:8080/ORIS_war/", headers, postData2));
-
-
         Map<String, String> getData = new HashMap<>();
         getData.put("id", "1");
         System.out.println(client.get("http://localhost:8080/ORIS_war/", headers, getData));
