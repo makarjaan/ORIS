@@ -18,22 +18,22 @@ public class Main {
         postData.put("id", "1");
         postData.put("title", "welcome");
         postData.put("body", "hello world");
-        System.out.println(client.post("http://localhost:8080/ORIS_war/", headers, postData));
+        System.out.println(client.post("http://localhost:8080", headers, postData));
 
 
         Map<String, String> getData = new HashMap<>();
         getData.put("id", "1");
-        System.out.println(client.get("http://localhost:8080/ORIS_war/", headers, getData));
+        System.out.println(client.get("http://localhost:8080", headers, getData));
 
 
         Map<String, String> putData = new HashMap<>();
         putData.put("title", "srabotalo");
         putData.put("body", "yra!");
-        System.out.println(client.put("http://localhost:8080/ORIS_war/?id=2", headers, putData));
+        System.out.println(client.put("http://localhost:8080", headers, putData));
 
 
         Map<String, String> deleteHeaders =  new HashMap<>();
-        System.out.println(client.delete("http://localhost:8080/ORIS_war/?id=1", deleteHeaders, null));
+        System.out.println(client.delete("http://localhost:8080", deleteHeaders, null));
 
 
 
