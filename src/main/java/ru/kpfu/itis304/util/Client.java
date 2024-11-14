@@ -1,4 +1,4 @@
-package ru.kpfu.itis304.les1;
+package ru.kpfu.itis304.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

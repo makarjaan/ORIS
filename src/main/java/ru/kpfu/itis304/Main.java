@@ -1,6 +1,6 @@
-package ru.kpfu.itis304.server;
+package ru.kpfu.itis304;
 
-import ru.kpfu.itis304.les1.Client;
+import ru.kpfu.itis304.util.Client;
 
 import java.util.HashMap;
 import java.util.Map;

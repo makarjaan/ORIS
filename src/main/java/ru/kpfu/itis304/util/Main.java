@@ -1,4 +1,4 @@
-package ru.kpfu.itis304.les1;
+package ru.kpfu.itis304.util;
 
 import java.net.MalformedURLException;
 import java.util.HashMap;
