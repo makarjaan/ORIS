@@ -5,17 +5,15 @@
 
 <#macro content>
     <#if users?has_content>
-    Пользователи:
+        Пользователи:
         <br>
-        Имя Очки
-    <br>
-    <#list users as u>
-        ${u.name} ${u.score}
+        Имя Фамилия
         <br>
-    </#list>
+        <#list users as u>
+            ${u.name}
+            <br>
+        </#list>
     </#if>
 </#macro>
-
-
 
 </html>
